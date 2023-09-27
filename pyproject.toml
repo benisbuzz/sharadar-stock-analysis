@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "sharadar-stock-analysis"
+version = "0.1.0"
+description = ""
+authors = ["benisbuzz <ben@danziger.uk>"]
+readme = "README.md"
+packages = [{include = "sharadar_stock_analysis"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+Nasdaq-Data-Link = "^1.0.4"
+matplotlib = "^3.8.0"
+mplfinance = "^0.12.10b0"
+pandas = "^2.1.1"
+ipython = "^8.15.0"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
